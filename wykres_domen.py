@@ -9,8 +9,9 @@ fig = px.bar(
     x="domena",
     y="cena",
     title="Ceny domen",
-    labels={"domena": "Domena", "cena": "Cena (PLN)"},
-    color="cena",  # Pokoloruj słupki według wartości
+    labels={"domena": "Domena", "cena": "Cena (PLN)", "status": "Status"},
+    color="status",  # Pokoloruj słupki według statusu
+    hover_data=["status"],  # Pokaż status w tooltip
 )
 
 # Interaktywność — domyślnie jest włączona!
